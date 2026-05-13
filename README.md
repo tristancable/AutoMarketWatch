@@ -25,14 +25,16 @@ AutoMarket Watch is a high-performance web application designed for automotive e
 
     Persistence: Browser LocalStorage API
 
-📋 Roadmap
+📋 Project Roadmap
 
-This project is evolving from a frontend prototype into a full-stack MERN application:
+This project follows a structured 5-phase development cycle to evolve from a static prototype into a complete social marketplace:
 
-    [x] Phase 1: Frontend UI, Market Logic, and LocalStorage Watchlist.
+    [x] Phase 1: Stack Choice & Sample App – Establishing the React + TypeScript foundation and core UI components.
 
-    [ ] Phase 2: Integration with a live Automotive Pricing API.
+    [ ] Phase 2: Talking to APIs – Integrating external automotive data sources and handling asynchronous data fetching.
 
-    [ ] Phase 3: Backend migration to Node.js and Express.
+    [ ] Phase 3: Custom API & CRUD – Building a dedicated Node/Express backend to manage custom vehicle listings and market data.
 
-    [ ] Phase 4: Database implementation with MongoDB for user accounts and historical price charting.
+    [ ] Phase 4: Adding Persistence – Implementing MongoDB to move beyond local storage and securely store global application data.
+
+    [ ] Phase 5: Membership & User Interactions – Introducing user authentication, profiles, and community-driven features.
