@@ -10,17 +10,16 @@ function App() {
       <nav className="sticky top-0 z-50 bg-[#08060d]/90 backdrop-blur-md border-b border-white/10 px-8 py-5">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           {" "}
-          {/* added items-center */}
-          {/* Logo Section */}
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 bg-blue-600 rounded-lg flex items-center justify-center font-black text-white italic shadow-lg shadow-blue-900/20">
-              AM
-            </div>
+            <img
+              src="/AutoMarketWatchLogo.png"
+              alt="AutoMarket Watch Logo"
+              className="w-9 h-9 object-contain drop-shadow-md"
+            />
             <span className="text-xl font-black tracking-tighter text-white uppercase">
               AutoMarket<span className="text-blue-500">Watch</span>
             </span>
           </div>
-          {/* Links Section */}
           <div className="flex items-center gap-10 text-xs font-bold uppercase tracking-[0.2em]">
             <Link
               to="/"

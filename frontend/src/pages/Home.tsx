@@ -3,7 +3,6 @@ import React from "react";
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-[var(--bg)]">
-      {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <img
           src="https://s3mag.com/wp-content/uploads/2024/05/Autozam-AZ-1-14-1280x640.jpg"
@@ -21,7 +20,6 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Content Section */}
       <section className="max-w-6xl mx-auto py-20 px-8 grid md:grid-cols-2 gap-12 text-left">
         <div>
           <h2 className="text-4xl font-bold text-[var(--text-h)] mb-6">
@@ -50,7 +48,6 @@ const Home: React.FC = () => {
 
         <div className="bg-[var(--code-bg)] border border-[var(--border)] p-10 rounded-3xl flex flex-col justify-center shadow-xl">
           <div className="space-y-8">
-            {/* Feature 1 */}
             <div className="flex gap-4 items-start">
               <div className="bg-blue-600/10 p-3 rounded-xl">
                 <span className="text-[var(--accent)] font-black text-2xl">
@@ -68,7 +65,6 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Feature 2 */}
             <div className="flex gap-4 items-start border-t border-[var(--border)] pt-8">
               <div className="bg-blue-600/10 p-3 rounded-xl">
                 <span className="text-[var(--accent)] font-black text-2xl">
@@ -86,7 +82,6 @@ const Home: React.FC = () => {
               </div>
             </div>
 
-            {/* Feature 3 */}
             <div className="flex gap-4 items-start border-t border-[var(--border)] pt-8">
               <div className="bg-blue-600/10 p-3 rounded-xl">
                 <span className="text-[var(--accent)] font-black text-2xl">

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-// Updated interface to include all data fields from Market
 interface Car {
   year: number;
   name: string;
@@ -56,7 +55,6 @@ const Watchlist: React.FC = () => {
               key={index}
               className="flex flex-col bg-[var(--code-bg)] border border-[var(--border)] rounded-2xl overflow-hidden hover:shadow-2xl transition-all text-left"
             >
-              {/* Image Container matches Market height */}
               <div className="h-48 w-full overflow-hidden">
                 <img
                   src={car.image}
@@ -70,7 +68,6 @@ const Watchlist: React.FC = () => {
                   {car.year} {car.name}
                 </h3>
 
-                {/* Price Row matches Market styling */}
                 <div className="flex justify-between items-center mt-4">
                   <span className="text-sm text-[var(--text)] uppercase font-semibold tracking-wider">
                     Avg. Market Price
@@ -80,7 +77,6 @@ const Watchlist: React.FC = () => {
                   </span>
                 </div>
 
-                {/* Trend Pill matches Market styling */}
                 <div
                   className={`inline-block mt-4 px-3 py-1 rounded-full text-xs font-black uppercase tracking-tighter w-fit ${
                     car.isUp
@@ -91,7 +87,6 @@ const Watchlist: React.FC = () => {
                   {car.trend} vs Last Month
                 </div>
 
-                {/* Remove Button styled like the Action Button */}
                 <button
                   onClick={() => removeFromWatchlist(car.name)}
                   className="mt-6 block text-center bg-rose-600/10 text-rose-500 border border-rose-500/20 font-bold py-3 rounded-xl hover:bg-rose-500 hover:text-white transition-all uppercase text-xs tracking-widest cursor-pointer"

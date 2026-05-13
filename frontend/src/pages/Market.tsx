@@ -48,13 +48,11 @@ const Market: React.FC = () => {
     },
   ];
 
-  // SAVE FUNCTION
   const addToWatchlist = (car: any) => {
     const currentWatchlist = JSON.parse(
       localStorage.getItem("watchlist") || "[]",
     );
 
-    // Check if car already exists to prevent duplicates
     if (!currentWatchlist.some((item: any) => item.name === car.name)) {
       const updatedWatchlist = [...currentWatchlist, car];
       localStorage.setItem("watchlist", JSON.stringify(updatedWatchlist));
@@ -108,7 +106,6 @@ const Market: React.FC = () => {
                 {car.trend} vs Last Month
               </div>
 
-              {/* UPDATED BUTTON: Calls addToWatchlist instead of linking */}
               <button
                 onClick={() => addToWatchlist(car)}
                 className="mt-6 block text-center bg-blue-600 text-white font-bold py-3 rounded-xl hover:bg-blue-500 transition-all uppercase text-xs tracking-widest cursor-pointer"
