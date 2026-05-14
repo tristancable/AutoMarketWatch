@@ -65,10 +65,8 @@ const Market: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto p-8">
       <div className="mb-10 text-left">
-        <h1 className="text-4xl font-bold text-[var(--text-h)]">
-          Live Market Feed
-        </h1>
-        <p className="text-[var(--text)] mt-2">
+        <h1 className="text-4xl font-bold text-(--text-h)">Live Market Feed</h1>
+        <p className="text-(--text) mt-2">
           Real-time valuation updates from across the nation.
         </p>
       </div>
@@ -77,7 +75,7 @@ const Market: React.FC = () => {
         {carData.map((car, index) => (
           <div
             key={index}
-            className="flex flex-col bg-[var(--code-bg)] border border-[var(--border)] rounded-2xl overflow-hidden hover:shadow-2xl transition-all text-left"
+            className="flex flex-col bg-(--code-bg) border border-(--border) rounded-2xl overflow-hidden hover:shadow-2xl transition-all text-left"
           >
             <div className="h-48 w-full overflow-hidden">
               <img
@@ -87,15 +85,15 @@ const Market: React.FC = () => {
               />
             </div>
 
-            <div className="p-6 flex flex-col flex-grow">
-              <h3 className="text-xl font-bold text-[var(--text-h)] mb-2">
+            <div className="p-6 flex flex-col grow">
+              <h3 className="text-xl font-bold text-(--text-h) mb-2">
                 {car.year} {car.name}
               </h3>
               <div className="flex justify-between items-center mt-4">
-                <span className="text-sm text-[var(--text)] uppercase font-semibold tracking-wider">
+                <span className="text-sm text-(--text) uppercase font-semibold tracking-wider">
                   Avg. Market Price
                 </span>
-                <span className="text-[var(--accent)] font-mono font-bold text-lg">
+                <span className="text-(--accent) font-mono font-bold text-lg">
                   {car.price}
                 </span>
               </div>

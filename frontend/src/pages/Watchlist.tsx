@@ -25,20 +25,18 @@ const Watchlist: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto p-8 text-left">
       <div className="mb-10 text-left">
-        <h1 className="text-4xl font-bold text-[var(--text-h)] mb-2">
+        <h1 className="text-4xl font-bold text-(--text-h) mb-2">
           My Watchlist
         </h1>
-        <p className="text-[var(--text)]">
-          Tracking the value of your dream fleet.
-        </p>
+        <p className="text-(--text)">Tracking the value of your dream fleet.</p>
       </div>
 
       {watchedCars.length === 0 ? (
-        <div className="bg-[var(--code-bg)] border-2 border-dashed border-[var(--border)] rounded-3xl p-20 text-center">
-          <h2 className="text-2xl font-bold text-[var(--text-h)] mb-4">
+        <div className="bg-(--code-bg) border-2 border-dashed border-(--border) rounded-3xl p-20 text-center">
+          <h2 className="text-2xl font-bold text-(--text-h) mb-4">
             Your Watchlist is Empty
           </h2>
-          <p className="text-[var(--text)] mb-8">
+          <p className="text-(--text) mb-8">
             You haven't added any vehicles to track yet.
           </p>
           <Link
@@ -53,7 +51,7 @@ const Watchlist: React.FC = () => {
           {watchedCars.map((car, index) => (
             <div
               key={index}
-              className="flex flex-col bg-[var(--code-bg)] border border-[var(--border)] rounded-2xl overflow-hidden hover:shadow-2xl transition-all text-left"
+              className="flex flex-col bg-(--code-bg) border border-(--border) rounded-2xl overflow-hidden hover:shadow-2xl transition-all text-left"
             >
               <div className="h-48 w-full overflow-hidden">
                 <img
@@ -63,16 +61,16 @@ const Watchlist: React.FC = () => {
                 />
               </div>
 
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-[var(--text-h)] mb-2">
+              <div className="p-6 flex flex-col grow">
+                <h3 className="text-xl font-bold text-(--text-h) mb-2">
                   {car.year} {car.name}
                 </h3>
 
                 <div className="flex justify-between items-center mt-4">
-                  <span className="text-sm text-[var(--text)] uppercase font-semibold tracking-wider">
+                  <span className="text-sm text-(--text) uppercase font-semibold tracking-wider">
                     Avg. Market Price
                   </span>
-                  <span className="text-[var(--accent)] font-mono font-bold text-lg">
+                  <span className="text-(--accent) font-mono font-bold text-lg">
                     {car.price}
                   </span>
                 </div>
