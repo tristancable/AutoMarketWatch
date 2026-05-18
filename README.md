@@ -46,7 +46,8 @@ npm -v
 
 ```bash
 git clone https://github.com/tristancable/AutoMarketWatch
-cd automarket-watch
+cd automarketwatch
+cd frontend
 ```
 
 ### 2. Install Dependencies
